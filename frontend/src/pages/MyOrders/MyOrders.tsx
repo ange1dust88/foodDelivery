@@ -136,10 +136,10 @@ function MyOrders() {
           {activeOrders.map((order: any) => (
             <div
               key={order.id}
-              className="flex gap-2 items-center py-4 px-2 border-b border-gray-300 justify-betwee"
+              className="flex gap-2 items-center py-4 px-2 border-b border-gray-300 justify-between"
             >
-              <h2 className="text-xl font-semibold">{order.restaurant.name}</h2>
-              <div>
+              <h2 className="text-xl font-semibold w-35">{order.restaurant.name}</h2>
+              <div className="flex flex-col gap-2 w-60">
                 {order.orderItems.map((item: any) => (
                   <div key={item.menuItem.id} className="flex items-center gap-1">
                     <img
@@ -169,8 +169,8 @@ function MyOrders() {
               key={order.id}
               className="flex gap-2 items-center py-4 px-2 border-b border-gray-200 justify-between opacity-70"
             >
-              <h2 className="text-xl font-semibold">{order.restaurant.name}</h2>
-              <div>
+              <h2 className="text-xl font-semibold w-35">{order.restaurant.name}</h2>
+              <div className="w-60">
                 {order.orderItems.map((item: any) => (
                   <div key={item.menuItem.id} className="flex items-center gap-1">
                     <img

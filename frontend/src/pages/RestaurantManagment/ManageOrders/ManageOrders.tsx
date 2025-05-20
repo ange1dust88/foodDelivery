@@ -137,6 +137,7 @@ function ManageOrders() {
         return (
           <Button
             onClick={() => handleStatusUpdate(order.id, "awaitCourierConfirm")}
+            disabled={!order.deliveryPerson?.id}
           >
             Handed to Courier
           </Button>

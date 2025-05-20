@@ -214,7 +214,7 @@ function Order() {
                 <AlertDialogHeader>
                   <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
                   <AlertDialogDescription>
-                      Are o
+                      Are you sure you want to place this order? You won’t be able to make changes once it’s submitted. 
                   </AlertDialogDescription>
                 </AlertDialogHeader>
                 <AlertDialogFooter>
