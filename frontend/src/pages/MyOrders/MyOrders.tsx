@@ -123,7 +123,7 @@ function MyOrders() {
               </AlertDialogHeader>
               <AlertDialogFooter>
                 <AlertDialogCancel>Cancel</AlertDialogCancel>
-                <AlertDialogAction onClick = {() => {logout; navigate('/login');} }>Continue</AlertDialogAction>
+                <AlertDialogAction onClick = {() => {logout(); navigate('/login');} }>Continue</AlertDialogAction>
               </AlertDialogFooter>
             </AlertDialogContent>
           </AlertDialog>

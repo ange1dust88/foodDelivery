@@ -74,7 +74,7 @@ function Restaurant() {
             {Object.entries(groupMenuByTag(restaurant.menu)).map(([tag, items]) => (
               <div key={tag} className="my-4">
                 <h3 className="text-2xl font-medium mb-4">{tag}</h3>
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-3">
                   {items.map((item: any) => (
                     <MenuItem
                       key={item.id}

@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "./ui/button";
+import { toast } from 'sonner';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -64,13 +65,13 @@ function RestaurantCard({
 
       const message = await response.text();
       if (response.ok) {
-          alert('Restaurant deleted!');
+          toast('Restaurant deleted!');
       } else {
-          alert(`Error: ${message}`);
+          toast(`Error: ${message}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Failed to delete restaurant.');
+      toast('Failed to delete restaurant.');
     }
   }
 
@@ -94,13 +95,13 @@ function RestaurantCard({
   
       const message = await response.text();
       if (response.ok) {
-        alert('Restaurant updated!');
+        toast('Restaurant updated!');
       } else {
-        alert(`Error: ${message}`);
+        toast(`Error: ${message}`);
       }
     } catch (error) {
       console.error('Error:', error);
-      alert('Failed to update restaurant.');
+      toast('Failed to update restaurant.');
     }
   };
   

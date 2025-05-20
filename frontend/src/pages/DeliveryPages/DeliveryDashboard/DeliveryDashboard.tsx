@@ -163,7 +163,7 @@ function DeliveryDashboard() {
                   </AlertDialogHeader>
                   <AlertDialogFooter>
                     <AlertDialogCancel>Cancel</AlertDialogCancel>
-                    <AlertDialogAction onClick = {() => {logout; navigate('/delivery-login');} }>Continue</AlertDialogAction>
+                    <AlertDialogAction onClick = {() => {logout(); navigate('/delivery-login');} }>Continue</AlertDialogAction>
                   </AlertDialogFooter>
                 </AlertDialogContent>
               </AlertDialog>

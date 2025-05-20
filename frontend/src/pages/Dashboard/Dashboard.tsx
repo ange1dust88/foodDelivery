@@ -84,7 +84,7 @@ function Dashboard() {
 
             </div>
             <h2 className="text-3xl font-bold pb-8">All restaurants</h2>
-            <div className="grid grid-cols-3 gap-4 pb-4 shadow-xs">
+            <div className="grid grid-cols-3 gap-4 pb-4">
               {restaurants.length > 0 ? (
                   restaurants.map((restaurant) => (
                     <RestaurantCard

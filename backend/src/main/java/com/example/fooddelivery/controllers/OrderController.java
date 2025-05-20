@@ -7,7 +7,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import org.apache.el.stream.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -287,8 +286,5 @@ public class OrderController {
             return ResponseEntity.badRequest().body("Failed to assign delivery person: " + e.getMessage());
         }
     }
-
-
-
 
 }

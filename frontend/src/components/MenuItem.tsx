@@ -33,13 +33,13 @@ function MenuItem({name, imageUrl, price, description, onClick} : MenuItemTypes)
                     <h2 className="font-medium">{price} zł</h2>
                     <p className="text-gray-500 ">{description}</p>
                 </div>
-                <img src={imageUrl} alt={name}  className='object-cover h-35 w-45 rounded-r-xl'/>
+                <img src={imageUrl} alt={name}  className='object-cover min-h-35 min-w-45 h-35 w-45 rounded-r-xl'/>
             </div>
         </DialogTrigger>
 
         <DialogContent className="max-w-4xl py-10 flex">
             <DialogTitle></DialogTitle>
-            <div className="w-116 h-100 overflow-hidden">
+            <div className="w-116 h-100 min-w-116 min-h-100 overflow-hidden">
                 <img src={imageUrl} alt={name} className='w-full h-full object-cover transition-transform  duration-300 ease-in-out hover:scale-120'/>
             </div>
             <div className="flex flex-col gap-1">

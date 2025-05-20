@@ -38,6 +38,11 @@ function Order() {
     }, {} as Record<number, { item: typeof items[number]; count: number }>)
   );
 
+  useEffect( () => {
+    if(!customerId) {
+      navigate('/login');
+    }
+  },[])
   const fetchTotalPrice = async (promo?: string) => {
   try {
     const payload = {

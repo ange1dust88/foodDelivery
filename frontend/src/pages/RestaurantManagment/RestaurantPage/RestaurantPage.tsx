@@ -65,9 +65,11 @@ function RestaurantPage() {
       const message = await response.text();
       if (response.ok) {
         toast('Menu item added!');
+        fetchRestaurant(); 
         setName("");
         setDescription("");
         setPrice(0);
+        setTag("");
         setImageUrl("");
       } else {
         toast(`Error: ${message}`);
@@ -162,7 +164,7 @@ function RestaurantPage() {
     <> 
       <SmallHeader isBlack={true}/>
 
-      <div className="bg-gray-100 min-h-screen flex justify-start p-10 gap-2 pt-20">
+      <div className="bg-gray-100 h-screen flex justify-start p-10 gap-2 pt-20">
         <div className="flex flex-col flex-2/5 gap-2">
           {/* restaurant info */}
           <div className="bg-white rounded-xl p-4 flex flex-col w-full">

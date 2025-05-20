@@ -129,7 +129,7 @@ function OwnerDashboard() {
     <>
       <SmallHeader isBlack={true}/> 
       <div className="h-screen p-4 pt-16 flex justify-center items-center">
-        <div className="min-w-7xl h-full">
+        <div className="w-7xl h-full">
 
           <div className="rounded-xl p-4 mb-2 bg-gray-100 flex flex-col h-45 mt-2">
             <h2 className="text-2xl font-bold mb-4">Admin panel:</h2>
@@ -244,7 +244,7 @@ function OwnerDashboard() {
           </div>
           <div className=" rounded-xl p-4 mb-4 border-2 border-gray-100">
             <h2 className="text-2xl font-bold mb-4">My Restaurants:</h2>
-            <div className="flex justify-start gap-2">
+            <div className="grid grid-cols-3 gap-4 pb-4">
               {restaurants.length > 0 ? (
                 restaurants.map((restaurant) => (
                     <RestaurantCard

@@ -45,9 +45,3 @@ function App() {
 }
 
 export default App
-
-
-//todo: 
-// menu and restaurants 
-// tests 
-// documentation
